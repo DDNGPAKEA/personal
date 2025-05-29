@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UNTUK BEBKU </title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #fdfaf6;
+      font-family: 'Poppins', sans-serif;
+      color: #4e342e;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3em;
+      color: #a67c52;
+      margin-top: 60px;
+    }
+    p, ul {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 20px auto;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+    nav {
+      background: #fff6ec;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      text-decoration: none;
+      color: #a67c52;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+    nav a:hover, nav a.active {
+      background: #faebd7;
+    }
+    section {
+      display: none;
+      padding-bottom: 50px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+    section.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    .reasons {
+      list-style: none;
+      padding: 0;
+    }
+    .reasons li {
+      margin: 10px 0;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a onclick="showPage('home')" class="active">Beranda</a>
+    <a onclick="showPage('tentang')">Tentang Kamu</a>
+    <a onclick="showPage('kenangan')">Kenangan</a>
+    <a onclick="showPage('surat')">Surat</a>
+    <a onclick="showPage('extra')">Kita</a>
+  </nav>
+
+  <section id="home" class="active">
+    <h1>Selamat Datang, Cintaku 🌿</h1>
+    <p>Hai beb aku buat web kecil kecilan nich, maaf ya klo  ga bagus hehehe lopyou sayanggg selamat menikmati 💌</p>
+  </section>
+
+  <section id="tentang">
+    <h1>Tentang Kamu 🌼</h1>
+    <p>Beb tau dak walaupun kita tu sering nn berantem tpi ttp kmu la yang paling ku cari paling ku sayang, ya aku tau aku tu orng nya ga pekaan mungkin kamu pernah ngerasa iri ngeliat pacar temen mu yang peka romantis suka ngasi kejutan, aku emng belum ngerti buat ngasi gitu bebb. tenang aja sayang aku mulai belajar kok dari kmu klo kejutan hadiah terus hal hal romantis itu emng harus dalam hubungan, ttp sama aku ya kita berusaha sama sama biar bisa sama sama selamanya 🫶🫶. oke kalau mau lanjut dah boleh kok </p>
+  </section>
+
+  <section id="kenangan">
+    <h1>Kenangan Kita 📸</h1>
+    <p>Nahhhh jadi ini cerita best of best foto yang aku pilih hehehe, bukan best si tapi aku milihnya random be wkwkwkwkw nnti klo lanjut terus ada kok foto yg buanyak tpi gatau menurut kamu bagus dak</p>
+    <div class="gallery">
+      <img src="WhatsApp Image 2025-05-29 at 17.46.57_fb10e52a.jpg" alt="Kenangan 1">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.27_69db9241.jpg" alt="Kenangan 2">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.34_1e27ad53.jpg" alt="Kenangan 3">
+      <img src="WhatsApp Image 2025-05-29 at 17.46.16_7aa2d92f.jpg" alt="Kenangan 4">
+      <img src="WhatsApp Image 2025-05-29 at 17.46.39_a4b72085.jpg" alt="Kenangan 5">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.22_f7140d69.jpg" alt="Kenangan 6">
+    </div>
+  </section>
+
+  <section id="surat">
+    <h1>Surat Untukmu 💌</h1>
+    <p>bebb aku minta maaf ya aku belakangan inin rewel sama kamu mungkin ada saat dimna kamu mulai cape ngadepin aku, aku minta maaf karna saya ingin menjadi anak baik hati jadi saya berjanji tidak akan rewel lagii beb hehehe. dah itu aja ini halaman sebenarnya di luar rencana tapi dah terlanjur di buat jadi yauda gapapa la ya wkwkw</p>
+  </section>
+
+  <section id="extra">
+    <h1>Haloo ini adalah sebuah galeri simpel yang proses membuat nya tidak simpel lumayan ribet juga si wkwkwk. btw kata kata di bwh ini yg ngetik aku tpi di alam bawah sadar jdi agak alay dikit gpp kan. ✨</h1>
+    <p>Aku ingin terus menulis cerita bersamamu. Membangun mimpi, tertawa, menangis, dan tumbuh bersama. Kita akan menjadi tim yang hebat, kamu dan aku.</p>
+    
+    <h2>Galeri Foto</h2>
+    <div class="gallery">
+      <img src="WhatsApp Image 2025-05-29 at 17.46.16_7aa2d92f.jpg" alt="Foto Kenangan 5">
+      <img src="WhatsApp Image 2025-05-29 at 17.46.18_a96de067.jpg" alt="Foto Kenangan 6">
+      <img src="WhatsApp Image 2025-05-29 at 17.46.39_a4b72085.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.46.57_fb10e52a.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.14_031211fa.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.15_a044b634.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.22_f7140d69.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.27_69db9241.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.28_bab778fe.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.29_289b3224.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.30_2baed7f2.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.32_92c0e798.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.34_1e27ad53.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.34_97c93079.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.34_97c93079.jpg" alt="Foto Kenangan 7">
+      <img src="WhatsApp Image 2025-05-29 at 17.47.35_f77664c1.jpg" alt="Foto Kenangan 7">
+    </div>
+    
+    <h2>Video Kenangan</h2>
+    <video controls width="500" style="border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); margin-top:15px;">
+      <source src="WhatsApp Video 2025-05-29 at 17.46.55_9f7eb9fa.mp4" type="video/mp4" />
+      Browser kamu tidak mendukung video ini.
+    </video>
+    <video controls width="500" style="border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); margin-top:15px;">
+      <source src="WhatsApp Video 2025-05-29 at 17.47.15_65c8c5a3.mp4" type="video/mp4" />
+      Browser kamu tidak mendukung video ini.
+    </video>
+    
+  </section>
+  
+
+  <audio autoplay loop>
+    <source src="WhatsApp Audio 2025-05-29 at 17.56.08_ca9f733a.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll("section").forEach(s => {
+        s.classList.remove("active");
+        s.style.display = "none";
+      });
+      document.querySelectorAll("nav a").forEach(a => a.classList.remove("active"));
+      event.target.classList.add("active");
+      const target = document.getElementById(id);
+      target.style.display = "block";
+      setTimeout(() => target.classList.add("active"), 50);
+    }
+  </script>
+</body>
+</html>
